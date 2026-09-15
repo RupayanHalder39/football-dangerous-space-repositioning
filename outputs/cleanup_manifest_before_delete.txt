@@ -1,0 +1,152 @@
+CLEANUP MANIFEST - dangerous_space_repositioning/outputs/
+Generated before deletion, per this round's explicit safety process.
+Scope: dangerous_space_repositioning/outputs/ ONLY. No files outside
+this directory were inspected or touched. pressing_structure/,
+offside_break/, canonical tracking/analytics data, source code, tests,
+and documentation were NOT scanned for deletion candidates.
+
+FILES SCHEDULED FOR DELETION (17 files, 304,512,902 bytes / 290.41 MB)
+========================================================================
+
+--- Group 1: Obsolete duplicate "20-second demo clip" renders (6 files, 298,176,185 bytes) ---
+Each project round re-rendered the SAME 440-1040 demo clip to its own
+QA subfolder; only the MOST RECENT one reflects the current, approved
+design. All 5 older ones are fully superseded by:
+  dangerous_space_repositioning/outputs/qa/grouped_region_bars_redesign/dangerous_space_repositioning_20s_demo.mp4
+(kept -- see "RETAINED" section below).
+
+1. path: dangerous_space_repositioning/outputs/qa/dangerous_space_repositioning_20s_demo.mp4
+   size: 62,361,343 bytes (59.5 MB)
+   reason: earliest surviving demo render (display-stability round); superseded by every later round's own re-render
+   superseded_by: outputs/qa/grouped_region_bars_redesign/dangerous_space_repositioning_20s_demo.mp4
+   referenced_in: HANDOFF.md (Preview & contact sheet paths list), docs/DISPLAY_STABILITY.md (QA section) -- BOTH UPDATED to note supersession before deletion
+
+2. path: dangerous_space_repositioning/outputs/qa/attack_relevance_fix/dangerous_space_repositioning_20s_demo.mp4
+   size: 67,084,440 bytes (64.0 MB)
+   reason: round-1 attacking-phase-relevance demo (soft gate); superseded by round 2's own re-render and every round since
+   superseded_by: outputs/qa/grouped_region_bars_redesign/dangerous_space_repositioning_20s_demo.mp4
+   referenced_in: not referenced by exact path in HANDOFF.md or docs/ (only the containing folder's prefix is mentioned, for its still-retained validation_broad_sample.csv / old_vs_new_t34p7.png)
+
+3. path: dangerous_space_repositioning/outputs/qa/current_attack_gate_fix/dangerous_space_repositioning_20s_demo.mp4
+   size: 42,733,050 bytes (40.8 MB)
+   reason: round-2 eligibility-gate demo; superseded by every round since (radar alignment, multi-region, graph redesigns)
+   superseded_by: outputs/qa/grouped_region_bars_redesign/dangerous_space_repositioning_20s_demo.mp4
+   referenced_in: not referenced by exact path (only the containing folder's prefix, for its still-retained validation CSVs/report)
+
+4. path: dangerous_space_repositioning/outputs/qa/radar_alignment_fix/dangerous_space_repositioning_20s_demo.mp4
+   size: 42,692,217 bytes (40.7 MB)
+   reason: radar-alignment-fix + spotlight round demo; superseded by every round since (multi-region, both graph redesigns)
+   superseded_by: outputs/qa/grouped_region_bars_redesign/dangerous_space_repositioning_20s_demo.mp4
+   referenced_in: HANDOFF.md §14g -- UPDATED to note supersession before deletion
+
+5. path: dangerous_space_repositioning/outputs/qa/multi_region_24s_window/dangerous_space_repositioning_20s_demo.mp4
+   size: 41,695,121 bytes (39.8 MB)
+   reason: Top-3 region + 24s-window round demo; superseded by both graph-redesign rounds since
+   superseded_by: outputs/qa/grouped_region_bars_redesign/dangerous_space_repositioning_20s_demo.mp4
+   referenced_in: HANDOFF.md §15j -- UPDATED to note supersession before deletion
+
+6. path: dangerous_space_repositioning/outputs/qa/graph_readability_redesign/dangerous_space_repositioning_20s_demo.mp4
+   size: 41,610,014 bytes (39.7 MB)
+   reason: stacked-bar graph-redesign round demo; superseded by this round's grouped-bar redesign
+   superseded_by: outputs/qa/grouped_region_bars_redesign/dangerous_space_repositioning_20s_demo.mp4
+   referenced_in: HANDOFF.md §16g -- UPDATED to note supersession before deletion
+
+--- Group 2: Obsolete graph-window comparison images (8 files, 4,871,181 bytes) ---
+From the FIRST graph-display-polish round, comparing window widths
+(30s-vs-16s, then 16s-vs-20s) that no longer exist -- the window is now
+locked at 24s (HANDOFF.md §15k) and the chart TYPE itself has since
+changed twice (line chart -> stacked bars -> grouped bars), so these
+comparisons no longer describe any current or recent design.
+
+7-10. path: dangerous_space_repositioning/outputs/qa/compare_0{1,2,3,4}_*.png (4 files)
+   sizes: 653,916 + 647,932 + 723,816 + 646,434 = 2,672,098 bytes
+   reason: 30s-vs-16s graph window comparison, from the FIRST graph-display-polish round (obsolete window widths, obsolete line-chart design)
+   superseded_by: prose summary retained in HANDOFF.md §8b/§8c; no image needed since window is now locked at 24s and chart type has changed twice since
+   referenced_in: HANDOFF.md §10 (prefix reference `outputs/qa/compare_*.png`) -- UPDATED to note removal before deletion
+
+11-14. path: dangerous_space_repositioning/outputs/qa/compare16v20_0{1,2,3,4}_*.png (4 files)
+   sizes: 525,427 + 508,825 + 610,208 + 554,623 = 2,199,083 bytes
+   reason: 16s-vs-20s graph window comparison, from the SECOND graph-display-polish round (obsolete window width, obsolete line-chart design)
+   superseded_by: prose summary retained in HANDOFF.md §8c; no image needed since window is now locked at 24s and chart type has changed twice since
+   referenced_in: HANDOFF.md §10 (prefix reference `outputs/qa/compare16v20_*.png`) -- UPDATED to note removal before deletion
+
+--- Group 3: Obsolete graph CHART-TYPE comparison images (3 files, 1,465,536 bytes) ---
+Both images compare a design that is itself no longer current (the
+line chart, and separately the stacked-bar design) against a
+DIFFERENT-FROM-CURRENT successor. The right half of the two
+graph_readability_redesign images (the stacked-bar design) was already
+extracted into this round's own
+outputs/qa/grouped_region_bars_redesign/graph{1,2}_stacked_vs_grouped_comparison.png
+before this deletion, so no information is lost.
+
+15. path: dangerous_space_repositioning/outputs/qa/graph_readability_redesign/graph1_old_vs_new_comparison.png
+    size: 492,642 bytes
+    reason: old LINE chart vs. stacked-bar comparison -- both designs are now obsolete (current design is grouped separate bars)
+    superseded_by: outputs/qa/grouped_region_bars_redesign/graph1_stacked_vs_grouped_comparison.png (current design vs. its immediate predecessor)
+    referenced_in: HANDOFF.md §16g -- UPDATED to note removal before deletion
+
+16. path: dangerous_space_repositioning/outputs/qa/graph_readability_redesign/graph2_old_vs_new_comparison.png
+    size: 534,272 bytes
+    reason: old LINE chart vs. dominant-bar-plus-ticks comparison -- both designs are now obsolete
+    superseded_by: outputs/qa/grouped_region_bars_redesign/graph2_tick_vs_grouped_comparison.png
+    referenced_in: HANDOFF.md §16g -- UPDATED to note removal before deletion
+
+17. path: dangerous_space_repositioning/outputs/qa/multi_region_24s_window/graph_window_20s_vs_24s_comparison.png
+    size: 438,622 bytes
+    reason: 20s-vs-24s LINE-chart comparison -- the window-width decision (24s, locked) is unaffected by chart type, but Graph 1/2 are no longer line charts at all, so the supporting image no longer represents any current or recent rendering
+    superseded_by: prose reasoning retained in HANDOFF.md §15f/§16 (the 24s window decision itself is unchanged and still locked)
+    referenced_in: HANDOFF.md §15j -- UPDATED to note removal before deletion
+
+TOTAL: 17 files, 304,512,902 bytes (290.41 MB) to be freed.
+
+DELIBERATELY NOT SCANNED / NOT TOUCHED THIS ROUND (disclosed, not an oversight)
+========================================================================
+The following subfolders contain smaller, round-specific validation
+artifacts (CSVs, markdown reports, montage/contact-sheet images, and a
+few helper scripts) that are still cited by path in docs/HANDOFF.md or
+carry standalone validation value. A full per-file audit of every one
+of these was out of scope for this pass given the much larger, safer
+win available in Groups 1-3 above; none of them were deleted, moved, or
+modified:
+  - outputs/qa/attack_relevance_fix/ (validation_broad_sample.csv and
+    old_vs_new_t34p7.png are directly referenced in HANDOFF.md; the
+    rest of this folder's case-illustration PNGs/scripts were left
+    alone rather than risk removing something still load-bearing)
+  - outputs/qa/current_attack_gate_fix/ (candidate_eligibility_validation.csv
+    and behind_tolerance_audit.csv are directly referenced in
+    HANDOFF.md/docs/METRIC_DEFINITIONS.md/docs/FINAL_DASHBOARD_NOTES.md;
+    left the whole folder alone)
+  - outputs/qa/display_stability_old_vs_new_contact_sheet.png (directly
+    referenced in HANDOFF.md and docs/DISPLAY_STABILITY.md)
+  - outputs/qa/graph2_alpha_comparison.png (directly referenced in
+    HANDOFF.md and docs/DISPLAY_STABILITY.md)
+
+========================================================================
+ADDENDUM — Final round (presentation polish + full 120s render), 2026-09-13
+========================================================================
+One additional file scheduled for deletion, AFTER the final-polish
+graph redesign, the 20s re-verification clip, and the full 120-second
+render all passed QA (per this round's own explicit ordering
+requirement — cleanup only after the 120s video is confirmed valid).
+
+18. path: dangerous_space_repositioning/outputs/qa/grouped_region_bars_redesign/dangerous_space_repositioning_20s_demo.mp4
+    size: 41,536,340 bytes (39.61 MB)
+    reason: the immediately-PRIOR round's own 20-second demo clip (grouped
+      bars, before this round's D1-width/LIVE-tag/y-axis-audit polish) --
+      fully superseded by this round's own re-render
+    superseded_by: outputs/final_demo/dangerous_space_repositioning_20s_final.mp4
+    referenced_in: HANDOFF.md (§10, §14g, §15j, §16g -- each a "CURRENT
+      demo clip lives at..." pointer left over from earlier rounds) and
+      docs/DISPLAY_STABILITY.md (QA section) -- ALL updated (path
+      substituted to point at the new final clip, each with a note that
+      the intermediate file was itself later superseded) BEFORE deletion
+
+RETAINED, explicitly, from this same folder: `graph1_stacked_vs_grouped_
+comparison.png` and `graph2_tick_vs_grouped_comparison.png` -- these
+document a real, still-relevant design decision (grouped vs. the
+earlier stacked bars) and are named on this round's own "keep" list
+("one useful final grouped-bar comparison image if needed for
+documentation").
+
+TOTAL (including this addendum): 18 files, 346,049,242 bytes
+(330.02 MB) freed across both cleanup passes.
